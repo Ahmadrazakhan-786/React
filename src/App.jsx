@@ -1,6 +1,7 @@
 import "./App.css";
+import PlayButton from "./Components/playbutton";
 import Video from "./Components/video";
-function App(){
+function App(){ // always name the filename with capital letter
   let videos = [{
     title: 'React Js Tutorial',
     views: '10k',
@@ -28,6 +29,11 @@ function App(){
       }
       {/* <Video verified={true} title="React Js Tutorial" views="10k" time="1 year ago" channel="Coder Dost"></Video>
       <Video verified={false} title="Node Js Tutorial " views="100k" time="1 month ago" channel="Coder Dost"></Video> */}
+      
+       {/* clear: both removes upper work */}
+      <div style={{clear:'both'}}> 
+      <PlayButton></PlayButton>
+      </div>
       
     </div>
     
