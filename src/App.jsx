@@ -32,12 +32,13 @@ function App(){ // always name the filename with capital letter
       
        {/* clear: both removes upper work */}
       <div style={{clear:'both'}}> 
-      <PlayButton></PlayButton>
+      <PlayButton name="Play" message="hiii"></PlayButton>
+      <PlayButton name="Pause" message="hello"></PlayButton>
       </div>
       
     </div>
     
-  ) 
+  ) ;
 }
 
 export default App;
