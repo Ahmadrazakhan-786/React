@@ -34,8 +34,8 @@ function App(){ // always name the filename with capital letter
        {/* clear: both removes upper work */}
       <div style={{clear:'both'}}> 
     
-      <PlayButton name="Play" message="hiii"></PlayButton>
-      <PlayButton name="Pause" message="hello"></PlayButton>
+      <PlayButton message="play-msg" onClick={()=>console.log('playyy')}>Play</PlayButton>
+      <PlayButton message="pause-msg" onClick={()=>alert('playyy')}>Pause</PlayButton>
       </div>
       
     </div>

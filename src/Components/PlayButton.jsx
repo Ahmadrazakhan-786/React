@@ -1,12 +1,12 @@
 import './PlayButton.css';
-function PlayButton({message,name}){
+function PlayButton({message,children,onClick}){
 
     function handleClick(){
-        console.log(message)
+        onClick();
     }
 
     return(
-        <button onClick={handleClick}>{name}</button>
+        <button onClick={handleClick}>{children}</button>
     )
 }
 
