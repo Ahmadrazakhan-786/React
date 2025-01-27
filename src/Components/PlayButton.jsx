@@ -1,5 +1,5 @@
 import './PlayButton.css';
-function PlayButton(message,name){
+function PlayButton({message,name}){
 
     function handleClick(){
         console.log(message)

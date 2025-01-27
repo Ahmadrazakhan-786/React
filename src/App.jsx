@@ -1,6 +1,6 @@
 import "./App.css";
-import PlayButton from "./Components/playbutton";
 import Video from "./Components/video";
+import PlayButton from "./Components/PlayButton";
 function App(){ // always name the filename with capital letter
   let videos = [{
     title: 'React Js Tutorial',
@@ -23,6 +23,7 @@ function App(){ // always name the filename with capital letter
   }];
   return (
     <div className="App">
+      {/* <PlayButton /> */}
       <div>Videos</div>
       {
         videos.map(video=> <Video verified={video.verified} title={video.title} views={video.views} time={video.views} channel={video.channel}></Video>)
@@ -32,6 +33,7 @@ function App(){ // always name the filename with capital letter
       
        {/* clear: both removes upper work */}
       <div style={{clear:'both'}}> 
+    
       <PlayButton name="Play" message="hiii"></PlayButton>
       <PlayButton name="Pause" message="hello"></PlayButton>
       </div>
