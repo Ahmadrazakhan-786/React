@@ -66,7 +66,26 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
-button{
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* button{
   background-color: lightseagreen;
   padding: 5px 10px;
+} */
+
+/* h4{
+  background-color: crimson;
+} */
+
+body{
+  background-color: #111;
+  
 }
+
+input{
+  color: black;
+}
+ 

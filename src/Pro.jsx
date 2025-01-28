@@ -26,7 +26,10 @@ const [num, setnum] = useState(0); // hooks: variable of react
             <button onClick={function(){
                 setnum(9);
             }}>Decrement</button>
+            <h4 className='text-4xl bg-pink-700 text-black'>hiii guys</h4>
+            
         </div>
+        
     )
 }
 
