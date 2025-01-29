@@ -4,12 +4,14 @@ import './index.css';
 // import App from './App.jsx'
 import Pro from './Pro.jsx';
 import Form from './Form.jsx'
+import Web from './Web.jsx';
 
 
 createRoot(document.getElementById('root')).render(
  
     // <App />
     // <Pro />
-    <Form/>
+    // <Form/>
+   <Web />
  
 )
