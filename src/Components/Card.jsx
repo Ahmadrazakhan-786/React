@@ -11,6 +11,8 @@ const Card = (props)=>{
             <h4 className="text-blue-400">{props.prof}</h4>
             <button className=" mt-5 bg-emerald-700 text-white px-4 py-2 rounded font-medium">Add Friend</button>
             {/* <h1 className="text-3xl">Username is {props.a}</h1> */}
+
+            
         </div>
         </>
     )

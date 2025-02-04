@@ -5,6 +5,7 @@ import './index.css';
 import Pro from './Pro.jsx';
 import Form from './Form.jsx'
 import Web from './Web.jsx';
+import Api from './Api.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -12,6 +13,7 @@ createRoot(document.getElementById('root')).render(
     // <App />
     // <Pro />
     // <Form/>
-   <Web />
+//    <Web />
+    <Api/>
  
 )
