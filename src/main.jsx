@@ -6,6 +6,7 @@ import Pro from './Pro.jsx';
 import Form from './Form.jsx'
 import Web from './Web.jsx';
 import Api from './Api.jsx';
+import { BrowserRouter } from 'react-router-dom';
 
 
 createRoot(document.getElementById('root')).render(
@@ -14,6 +15,12 @@ createRoot(document.getElementById('root')).render(
     // <Pro />
     // <Form/>
 //    <Web />
-    <Api/>
+    
+
+    // browser router helps to move from one place to another
+    <BrowserRouter>
+       <Api/>
+    </BrowserRouter>
+    
  
 )
