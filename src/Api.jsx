@@ -1,13 +1,20 @@
 import axios from "axios"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { Route, Routes } from "react-router-dom";
 import About from './pages/About';
 import Product from './pages/Product';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Loader from "./Components/Loader";
+import Section from "./Components/Section";
+import Harder from "./Components/Harder";
+import Footer from "./Components/Footer";
+import { DataContext } from "./context/UserContext";
 
 const Api = ()=>{
+
+    const data = useContext(DataContext)
+    console.log(data)
 
     // const [data, setData] = useState([])
 
@@ -31,13 +38,17 @@ const Api = ()=>{
         //     })}
         // </div>
        <div>
-        <Loader/>
+        {/* <Loader/>
         <Routes>
             <Route path="/" element={< Home />}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/product" element={<Product/>}/>
-        </Routes>
+        </Routes> */}
+        <h1>This is an api</h1>
+         <Harder />
+         <Footer />
+         <Section />
        </div>
         
     )
