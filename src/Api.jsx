@@ -45,7 +45,7 @@ const Api = ()=>{
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/product" element={<Product/>}/>
         </Routes> */}
-        <h1>This is an api</h1>
+        <h1>This is an api {data.username}</h1>
          <Harder />
          <Footer />
          <Section />
