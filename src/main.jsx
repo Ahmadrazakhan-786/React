@@ -7,6 +7,8 @@ import Form from './Form.jsx'
 import Web from './Web.jsx';
 import Api from './Api.jsx';
 import UserContext from './context/UserContext.jsx';
+import Naya from './Naya.jsx';
+
 // import { BrowserRouter } from 'react-router-dom';
 
 
@@ -23,9 +25,10 @@ createRoot(document.getElementById('root')).render(
     //    <Api/>
     // </BrowserRouter>
 
-    <UserContext>
-        <Api/>
-    </UserContext>
-    
+    // <UserContext>
+    //     <Api/>
+    // </UserContext>
+
+    <Naya />
  
 )
