@@ -7,16 +7,26 @@ const Naya = () => {
 
   // let counter = 15
 
-const [Counter, setCounter] = useState(15) // hooks
+const [Counter, setCounter] = useState(5) // hooks
 
   let addvalue = ()=>{
     console.log("clicked",Math.random())
-    // counter += 1
-    setCounter(Counter + 1);
+    if(Counter<=20){
+      setCounter(Counter + 1);
+    }
+    else{
+      console.log("out of range");
+    }
   }
 
   const removevalue = () =>{
     console.log("value removed")
+    if(Counter>0){
+      setCounter(Counter-1)
+    }
+    else{
+      console.log("invalid")
+    }
   }
   return (
     <>
