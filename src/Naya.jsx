@@ -1,12 +1,18 @@
 import React from 'react'
+import "./Naya.css";
+import { useState } from 'react';
+
 
 const Naya = () => {
 
-  let counter = 15
+  // let counter = 15
 
-  const addvalue = ()=>{
+const [Counter, setCounter] = useState(15) // hooks
+
+  let addvalue = ()=>{
     console.log("clicked",Math.random())
-    counter += 1
+    // counter += 1
+    setCounter(Counter + 1);
   }
 
   const removevalue = () =>{
@@ -15,11 +21,11 @@ const Naya = () => {
   return (
     <>
     <h1>Chai aur react</h1>
-    <h2>Counter values : {counter}</h2>
+    <h2>Counter values : {Counter}</h2>
     
-    <button onClick={addvalue}>Add value</button>
+    <button onClick={addvalue}>Add value {Counter}</button>
     <br />
-    <button onClick={removevalue}>Remove value</button>
+    <button onClick={removevalue}>Remove value {Counter}</button>
     </>
 
   )
