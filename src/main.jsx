@@ -8,6 +8,7 @@ import Web from './Web.jsx';
 import Api from './Api.jsx';
 import UserContext from './context/UserContext.jsx';
 import Naya from './Naya.jsx';
+import Color from './Color.jsx';
 
 // import { BrowserRouter } from 'react-router-dom';
 
@@ -29,6 +30,7 @@ createRoot(document.getElementById('root')).render(
     //     <Api/>
     // </UserContext>
 
-    <Naya />
+    // <Naya />
+    <Color />
  
 )
