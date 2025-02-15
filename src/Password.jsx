@@ -36,6 +36,42 @@ const Password = () => {
         readOnly
 
         />
+        <button className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'>copy</button>
+      </div>
+      <div className='flex text-sm gap-x-2'>
+        <div className='flex items-center gap-x-1'>
+          <input 
+          type="range" 
+          min={7}
+          max={100}
+          value={length}
+          className='cursor-pointer'
+          onChange={(e)=> {setlength(e.target.value)}}
+          />
+          <label>Length: {length}</label>
+        </div>
+        <div className='flex items-center gap-x-1'>
+          <input 
+          type="checkbox"
+          defaultChecked={numAllowed}
+          id='numberInput'
+          onChange={() => {
+            setnumAllowed((prev) => !prev);
+          }}
+          />
+          <label htmlFor='numberInput'>Numbers</label>
+        </div>
+        <div className='flex items-center gap-x-1'>
+          <input 
+          type="checkbox"
+          defaultChecked={numAllowed}
+          id='numberInput'
+          onChange={() => {
+            setcharAllowed((prev) => !prev);
+          }}
+          />
+          <label htmlFor='charactersInput'>Characters</label>
+          </div>
       </div>
     </div>
     </>
