@@ -1,6 +1,7 @@
 import React from 'react'
-import useCurrencyInfo from './hooks/Currencyinfo'
-import InputBox from './Components/InputBox'
+import {useCurrencyInfo} from './hooks/Currencyinfo'
+import { InputBox } from ''
+
 
 const CurrencyConverter = () => {
   return (
