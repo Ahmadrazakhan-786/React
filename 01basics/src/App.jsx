@@ -1,11 +1,12 @@
 import './App.css'
+import Team from './Components/Team'
 
 function App() {
   
 
   return (
     <>
-    <h1>lets win an hackathon</h1>
+    <Team />
     </>
   )
 }
