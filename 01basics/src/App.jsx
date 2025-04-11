@@ -2,6 +2,7 @@ import './App.css'
 import Counter from './Components/Counter'
 import InputName from './Components/InputName'
 import Likes from './Components/Likes'
+import LoginForm from './Components/LoginForm'
 import Team from './Components/Team'
 
 function App() {
@@ -16,7 +17,9 @@ function App() {
 
       {/* <Likes /> */}
 
-      <InputName />
+      {/* <InputName /> */}
+
+      <LoginForm />
     </>
   )
 }
