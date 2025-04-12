@@ -7,7 +7,9 @@ const NewLoginForm = () => {
     const [welcome, setwelcome] = useState(false)
     const [showpassword, setshowpassword] = useState(false)
     const [error, seterror] = useState('')
+    const [strength, setstrength] = useState('')
 
+    // Login Form Validation
     const handleLogin = () => {
         if(username && password){
             setwelcome(true);
@@ -18,11 +20,25 @@ const NewLoginForm = () => {
         }
     }
 
+    // Clear Form
     const handleClear = () => {
         setusername('');
         setpassword('');
         setwelcome(false);
         seterror('');
+        setstrength('');
+    }
+
+    // check strength of password
+    const passwordStrength = (password) =>{
+        if(password.length === 0) return '';
+        if(password.length < 6) return 'weak';
+        if(password.length < 10) return 'medium';
+
+        const strongRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{10,}$/;
+        if(strongRegex.test(password)) return 'strong';
+
+        return 'medium';
     }
 
   return (
@@ -41,9 +57,17 @@ const NewLoginForm = () => {
             type= {showpassword ? 'text' : 'password'}
             placeholder='password'
             value={password}
-            onChange={(e) => setpassword(e.target.value)}
-        
+            onChange={(e) => {
+                const newpass = e.target.value
+                setpassword(newpass)
+                setstrength(passwordStrength(newpass))
+            }}
         />
+
+       {/* password strength indicator: */}
+          {strength && (
+            <p>Strength: {strength}</p>
+          )}  
 
         <label>
         <input 
@@ -54,7 +78,19 @@ const NewLoginForm = () => {
         </label>
         <br /> <br />
 
-        <button onClick={handleLogin}>Login</button>
+        <button onClick={handleLogin}
+         disabled={!username || !password}
+         style={{
+            marginRight: '10px',
+            backgroundColor: (!username || !password) ? 'gray' : '#4CAF50',
+            color: 'white',
+            padding: '8px 16px',
+            border: 'none',
+            cursor: (!username || !password) ? 'not-allowed' : 'pointer'
+          }}
+        >
+            Login
+        </button>
         <button onClick={handleClear}>Clear</button>
 
         {error && (
