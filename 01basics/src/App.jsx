@@ -1,9 +1,11 @@
+import Favfruits from '../Practice/Favfruits'
 import './App.css'
 import Counter from './Components/Counter'
 import InputName from './Components/InputName'
 import Likes from './Components/Likes'
 import LoginForm from './Components/LoginForm'
 import NewLoginForm from './Components/NewLoginForm'
+import StudentList from './Components/StudentList'
 import Team from './Components/Team'
 
 function App() {
@@ -22,7 +24,11 @@ function App() {
 
       {/* <LoginForm /> */}
 
-      <NewLoginForm />
+      {/* <NewLoginForm /> */}
+
+      {/* <StudentList /> */}
+
+      <Favfruits />
     </>
   )
 }
