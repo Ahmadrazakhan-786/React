@@ -1,3 +1,4 @@
+import AddProduct from '../Practice/AddProduct'
 import Favfruits from '../Practice/Favfruits'
 import NewProduct from '../Practice/NewProduct'
 import ProductCard from '../Practice/ProductCard'
@@ -13,11 +14,11 @@ import UserCard from './Components/UserCard'
 
 function App() {
 
-  const products = [
-    { name: "Apple", price: "$2", available: true },
-    { name: "Banana", price: "$1", available: false },
-    { name: "Orange", price: "$3", available: true }
-  ];
+  // const products = [
+  //   { name: "Apple", price: "$2", available: true },
+  //   { name: "Banana", price: "$1", available: false },
+  //   { name: "Orange", price: "$3", available: true }
+  // ];
   
 
   return (
@@ -48,14 +49,16 @@ function App() {
       <ProductCard ProductName='Mouse' Price='200' available={false} />
       <ProductCard ProductName='Keyboard' Price='700' available={true} /> */}
 
-        {products.map((item, idx)=>(
+        {/* {products.map((item, idx)=>(
             <NewProduct 
               key={idx}
               name={item.name}
               price={item.price}
               available={item.available}
             />
-        ))}
+        ))} */}
+
+        <AddProduct />
 
     </>
   )
