@@ -6,7 +6,7 @@ const Favfruits = () => {
 
   return (
     <div>
-      <h3>🍉 My Favorite Fruits</h3>
+      <h3 className='text-red-400'>🍉 My Favorite Fruits</h3>
           <ul style={{listStyleType: 'none'}}>
             {Fruits.map((name, idx)=>
               <li key={idx}>

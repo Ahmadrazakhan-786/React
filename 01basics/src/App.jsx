@@ -1,4 +1,5 @@
 import AddProduct from '../Practice/AddProduct'
+import DeleteProduct from '../Practice/DeleteProduct'
 import Favfruits from '../Practice/Favfruits'
 import NewProduct from '../Practice/NewProduct'
 import ProductCard from '../Practice/ProductCard'
@@ -58,7 +59,9 @@ function App() {
             />
         ))} */}
 
-        <AddProduct />
+        {/* <AddProduct /> */}
+
+        {/* <DeleteProduct /> */}
 
     </>
   )
