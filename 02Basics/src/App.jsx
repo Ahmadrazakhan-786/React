@@ -6,14 +6,23 @@ import InputBox from './Components/InputBox'
 import DisplayBox from './Components/DisplayBox'
 
 function App() {
-    const [text, settext] = useState('')
+    // const [text, settext] = useState('')
 
   return (
     <>
-     <h2>Lifted State Example</h2>
+     {/* <h2>Lifted State Example</h2>
      
      <InputBox text={text} settext={settext}/>
-     <DisplayBox text={text}/>
+     <DisplayBox text={text}/> */}
+
+     <Router>
+      <div>
+        {/* navigation link */}
+        <nav>
+          
+        </nav>
+      </div>
+     </Router>
     </>
   )
 }
