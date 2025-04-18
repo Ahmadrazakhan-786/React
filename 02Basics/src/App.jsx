@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
+import Homes from './Pages/Homes'
+import User from './Pages/User'
 
 function App() {
     // const [text, settext] = useState('')
@@ -39,7 +41,7 @@ function App() {
       </div>
      </Router> */}
 
-      <Router>
+      {/* <Router>
       <nav>
          <Link to="/">Home</Link>  |{" "}
          <Link to="/about">About</Link>
@@ -50,6 +52,21 @@ function App() {
           <Route path="/about" element={<About/>}/>
          
          </Routes>
+
+      </Router> */}
+
+      <Router>
+
+        <nav>
+          <Link to="/">Homes</Link> |
+          <Link to="/user/23">User 23</Link> |
+          <Link to="/user/99">User 99</Link>
+        </nav>
+
+        <Routes>
+          <Route path='/' element={<Homes/>}/>
+          <Route path='user/:id' element={<User/>}/>
+        </Routes>
 
       </Router>
 
