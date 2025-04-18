@@ -10,6 +10,8 @@ import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Homes from './Pages/Homes'
 import User from './Pages/User'
+import Products from './Components/Products'
+import ProductDetails from './Components/ProductDetails'
 
 function App() {
     // const [text, settext] = useState('')
@@ -55,7 +57,7 @@ function App() {
 
       </Router> */}
 
-      <Router>
+      {/* <Router>
 
         <nav>
           <Link to="/">Homes</Link> |
@@ -68,6 +70,19 @@ function App() {
           <Route path='user/:id' element={<User/>}/>
         </Routes>
 
+      </Router> */}
+
+      <Router>
+      <nav className='flex items-center justify-between m-5'>
+          <Link to="/">Home</Link> 
+          <Link to="/products">Products</Link>
+        </nav>
+
+        <Routes>
+        <Route path="/" element={<h2>Welcome to our store</h2>} />
+          <Route path='/products' element={<Products/>}/>
+          <Route path='/product/:id' element={<ProductDetails/>}/>
+        </Routes>
       </Router>
 
     </>
