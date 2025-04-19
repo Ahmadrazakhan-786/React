@@ -7,10 +7,11 @@ const Products = () => {
         { id: 1, name: 'iPhone 15', price: '$999' },
         { id: 2, name: 'Samsung Galaxy S23', price: '$899' },
         { id: 3, name: 'OnePlus 11', price: '$799' }
-      ];par
+      ];
+      
 
   return (
-    <div>
+    <div >
         <h2>Product List</h2>
         <ul>
             {products.map((p)=>(

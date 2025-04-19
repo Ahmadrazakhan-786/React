@@ -19,9 +19,9 @@ const ProductDetails = () => {
 
   return (
     <div>
-        <h2>{product.name}</h2>
-        <p><strong>Price:</strong> {product.price}</p>
-        <p><strong>Description:</strong>{product.desc}</p>
+        <h2 className='text-fuchsia-400'>{product.name}</h2>
+        <p className='text-emerald-300'><strong>Price:</strong> {product.price}</p>
+        <p className='text-cyan-300'><strong>Description:</strong>{product.desc}</p>
     </div>
   )
 }
