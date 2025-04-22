@@ -7,8 +7,8 @@ const Dashboard = () => {
         <h2 className='text-fuchsia-600'>Dashboard</h2>
 
         <nav>
-            <Link to="profile">Profile</Link> | {" "}
-            <Link to="settings">Settings</Link>
+            <Link to="profile" className='text-violet-600'>Profile</Link> | {" "}
+            <Link to="settings" className='text-violet-700'>Settings</Link>
         </nav>
         <hr />
 
