@@ -6,7 +6,7 @@ const Homes = () => {
     <div>
         <h2>Welcome to Home Page</h2>
         <Link to="/dashboard/profile" className='text-red-400'>Go to Profile</Link><br />
-      <Link to="/dashboard/settings" className='text-red-400'>Go to Settings</Link>
+      <Link to="/dashboard/settings" className='text-emerald-500'>Go to Settings</Link>
     </div>
   )
 }
