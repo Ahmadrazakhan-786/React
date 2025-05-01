@@ -8,7 +8,7 @@ const Dashboard = () => {
 
         <nav>
             <Link to="profile" className='text-violet-600'>Profile Section</Link> | {" "}
-            <Link to="settings" className='text-violet-700'>Settings</Link>
+            <Link to="settings" className='text-violet-700'>Settings Section</Link>
         </nav>
         <hr />
 
