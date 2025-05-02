@@ -15,6 +15,7 @@ import ProductDetails from './Components/ProductDetails'
 import Dashboard from './Components/Dashboard'
 import Profile from './Components/Profile'
 import Settings from './Components/Settings'
+import UseEffect from './Components/UseEffect'
 
 function App() {
     // const [text, settext] = useState('')
@@ -89,7 +90,7 @@ function App() {
       </Router> */}
 
 
-      <Router>
+      {/* <Router>
         <Routes>
         <Route path="/" element={<Homes />} />
           <Route path='/dashboard' element={<Dashboard/>}>
@@ -97,7 +98,9 @@ function App() {
               <Route path='settings' element={<Settings/>}/>
           </Route>
         </Routes>
-      </Router>
+      </Router> */}
+
+      <UseEffect/>
     </>
   )
 }
