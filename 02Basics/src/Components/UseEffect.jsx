@@ -27,7 +27,7 @@ const UseEffect = () => {
   return (
     <div className='flex flex-col items-center justify-center h-screen bg-gray-500'>
         <h1 className='text-3xl font-bold mb-3'>⏱ Timer</h1>
-        <p className='text-2xl text-black ml-5'>{count} seconds passed</p>
+        <p className='text-2xl text-black ml-5'>{count} seconds passed 💕</p>
         <div className='space-x-4 mt-4'>
           <button 
           onClick={handleStart}
