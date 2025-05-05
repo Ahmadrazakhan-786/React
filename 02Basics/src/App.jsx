@@ -16,6 +16,7 @@ import Dashboard from './Components/Dashboard'
 import Profile from './Components/Profile'
 import Settings from './Components/Settings'
 import UseEffect from './Components/UseEffect'
+import InputFocus from './Components/InputFocus'
 
 function App() {
     // const [text, settext] = useState('')
@@ -100,7 +101,9 @@ function App() {
         </Routes>
       </Router> */}
 
-      <UseEffect/>
+      {/* <UseEffect/> */}
+
+      <InputFocus />
     </>
   )
 }

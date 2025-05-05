@@ -63,7 +63,7 @@ const UseEffect = () => {
           <h2 className='text-xl font-semibold mt-3'>Lap times</h2>
           <ul className='list-disc pl-5'>
             {laps.map((lap,index)=>(
-              <li key={index}>Lap {index+1}:{lap} sec</li>
+              <li key={index}>Lap {index+1} : {lap} sec</li>
             ))}
           </ul>
         </div>
