@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 const UseEffect = () => {
     const [count, setcount] = useState(0)
     const [isRunning, setisRunning] = useState(false)
+    const [laps, setlaps] = useState([])
 
     useEffect(() => {
       let timer;
@@ -22,6 +23,11 @@ const UseEffect = () => {
     const handleReset = () => {
       setisRunning(false);
       setcount(0);
+      setlaps([]);
+    }
+
+    const handleLap = () =>{
+      setlaps(prev => [...prev,count]);
     }
     
   return (
@@ -45,6 +51,21 @@ const UseEffect = () => {
         >
           Reset
         </button>
+
+        <button
+        onClick={handleLap}
+        className="px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"
+        >Lap
+        </button>
+        </div>
+
+        <div>
+          <h2 className='text-xl font-semibold mt-3'>Lap times</h2>
+          <ul className='list-disc pl-5'>
+            {laps.map((lap,index)=>(
+              <li key={index}>Lap {index+1}:{lap} sec</li>
+            ))}
+          </ul>
         </div>
     </div>
   )
