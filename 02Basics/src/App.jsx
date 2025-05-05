@@ -17,6 +17,7 @@ import Profile from './Components/Profile'
 import Settings from './Components/Settings'
 import UseEffect from './Components/UseEffect'
 import InputFocus from './Components/InputFocus'
+import FactorialCalc from './Components/FactorialCalc'
 
 function App() {
     // const [text, settext] = useState('')
@@ -103,7 +104,9 @@ function App() {
 
       {/* <UseEffect/> */}
 
-      <InputFocus />
+      {/* <InputFocus /> */}
+
+      <FactorialCalc />
     </>
   )
 }
