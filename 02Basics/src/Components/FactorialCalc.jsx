@@ -14,7 +14,8 @@ const FactorialCalc = () => {
     },[number]);
 
   return (
-    <div className= {`p-6 h-screen ${darkmode ? 'bg-gray-900 text-white ' : 'bg-white text-black'}`}>
+   <div className='flex flex-col items-center justify-center h-screen bg-gray-500 '>
+     <div className= {`p-6 ${darkmode ? 'bg-gray-900 text-white rounded-2xl' : 'bg-white text-black rounded-2xl'}`}>
         <h1 className="text-2xl font-bold mb-4">Factorial Calculator</h1>
 
         <input 
@@ -22,17 +23,19 @@ const FactorialCalc = () => {
         value={number}
         className='border p-2 mb-4 rounded'
         onChange={(e) => setnumber(parseInt(e.target.value) || 0)}
+
         />
 
         <p className="mb-4">Factorial of a number is : {factorial}</p>
 
         <button
-        className='bg-blue-500 text-white px-4 py-2 rounded mr-2'
+         className="bg-blue-500 text-white px-4 py-2 rounded mr-2"
         onClick={() => setdarkmode(prev => !prev)}
         >
             Toggle Dark Mode
         </button>
     </div>
+   </div>
   )
 }
 
