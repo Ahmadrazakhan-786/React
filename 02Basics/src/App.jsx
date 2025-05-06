@@ -18,6 +18,8 @@ import Settings from './Components/Settings'
 import UseEffect from './Components/UseEffect'
 import InputFocus from './Components/InputFocus'
 import FactorialCalc from './Components/FactorialCalc'
+import { ThemeProvider } from './Components/ThemeContext'
+import Homewa from './Components/Homewa'
 
 function App() {
     // const [text, settext] = useState('')
@@ -106,7 +108,11 @@ function App() {
 
       {/* <InputFocus /> */}
 
-      <FactorialCalc />
+      {/* <FactorialCalc /> */}
+
+      <ThemeProvider>
+        <Homewa />
+      </ThemeProvider>
     </>
   )
 }
