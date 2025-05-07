@@ -20,6 +20,7 @@ import InputFocus from './Components/InputFocus'
 import FactorialCalc from './Components/FactorialCalc'
 import { ThemeProvider } from './Components/ThemeContext'
 import Homewa from './Components/Homewa'
+import Counter from './Components/Counter'
 
 function App() {
     // const [text, settext] = useState('')
@@ -110,9 +111,11 @@ function App() {
 
       {/* <FactorialCalc /> */}
 
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <Homewa />
-      </ThemeProvider>
+      </ThemeProvider> */}
+
+      <Counter />
     </>
   )
 }
