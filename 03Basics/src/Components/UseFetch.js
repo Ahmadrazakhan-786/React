@@ -11,7 +11,7 @@ const useFetch = (url) =>{
       const fetchData = () =>{
         try {
             setloading(true);
-        } catch (error) {
+        } catch (err) {
             
         }
       }
