@@ -1,0 +1,25 @@
+import React from 'react'
+import useFetch from './UseFetch'
+
+const Users = () => {
+    const {data, error, loading} = useFetch('https://jsonplaceholder.typicode.com/users');
+  return (
+    <div>
+        <h2 className='text-2xl font-bold mb-4'>📦 Users List</h2>
+
+        {loading && <p className='text-yellow-500'>Loading...</p>}
+        {error && <p className='text-red-500'>Error: {error}</p>}
+
+
+        {data && (
+            <ul className='list-disc pl-6'>
+                {data.map(user => (
+                    <li key={user.id}>{user.name}</li>
+                ))}
+            </ul>
+        )}
+    </div>
+  )
+}
+
+export default Users
