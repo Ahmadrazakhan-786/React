@@ -4,7 +4,7 @@ import useFetch from './UseFetch'
 const Users = () => {
     const {data, error, loading} = useFetch('https://jsonplaceholder.typicode.com/users');
   return (
-    <div>
+    <div className='flex flex-col items-center justify-center h-screen'>
         <h2 className='text-2xl font-bold mb-4'>📦 Users List</h2>
 
         {loading && <p className='text-yellow-500'>Loading...</p>}
