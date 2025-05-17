@@ -12,7 +12,7 @@ const Users = () => {
 
 
         {data && (
-            <ul className='list-disc pl-6'>
+            <ul className='list-disc pl-5'>
                 {data.map(user => (
                     <li key={user.id}>{user.name}</li>
                 ))}
