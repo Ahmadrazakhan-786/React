@@ -7,7 +7,7 @@ const Users = () => {
     <div className='flex flex-col items-center justify-center h-screen'>
         <h2 className='text-2xl font-bold mb-4'>📦 Users Lists:</h2>
 
-        {loading && <p className='text-yellow-500'>Loading....</p>}
+        {loading && <p className='text-yellow-600'>Loading....</p>}
         {error && <p className='text-red-500'>Error: {error}</p>}
 
 
