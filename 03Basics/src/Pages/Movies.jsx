@@ -11,8 +11,8 @@ const Movies = () => {
   const getuserData = async() => {
       try {
         const response =  await axios.get(API);
-        console.log(response);
-        setdata(response);
+        console.log(response.data);
+        setdata(response.data);
       } catch (error) {
         console.log(error)
       }
